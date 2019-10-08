@@ -112,6 +112,10 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 //
     if let imageData = data {
         cell.countryImage.image = UIImage(data: imageData)
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 5
+        cell.layer.borderWidth = 2
+        cell.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
 //    getFlag(flagImage: cell.countryImage.image!, alphaCode: currentCountry.alpha2Code)
     
